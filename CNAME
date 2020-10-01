@@ -1,6 +1,1 @@
-www.lemmaiot.cf
-$ dig www.lemmaiot.cf +nostats +nocomments +nocmd
-    > ;www.lemmaiot.cf.                     IN      A
-    > www.lemmaiot.cf.              3592    IN      CNAME   lemmaiot-cloud.github.io.
-    > YOUR-USERNAME.github.io.      43192   IN      CNAME    GITHUB-PAGES-SERVER .
-    >  GITHUB-PAGES-SERVER .         22      IN      A       192.0.2.1
+www.lemmaiot.com.ng
