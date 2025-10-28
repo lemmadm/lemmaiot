@@ -1,7 +1,0 @@
-User-agent: *
-Disallow: /admin/
-Disallow: /private/
-Disallow: /confidential/
-Disallow: /temp/
-
-Sitemap: https://www.lemmaiot.com.ng/sitemap.xml
