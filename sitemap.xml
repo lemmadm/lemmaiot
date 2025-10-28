@@ -1,0 +1,29 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.lemmaiot.com.ng/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url> <loc>https://www.lemmaiot.com.ng/get_started.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url> <loc>https://www.lemmaiot.com.ng/services.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+<url> <loc>https://www.lemmaiot.com.ng/contact.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+<url> <loc>https://lemmaiot.glide.page</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url> <loc>https://lemmaiot.carrd.co</loc>
+    <priority>0.7</priority>
+  </url>
+  </url>
+
+  <!-- Add more URLs for other important pages -->
+</urlset>
