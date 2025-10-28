@@ -1,116 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Primary SEO Meta Tags -->
-    <title>LemmaIoT Cloud Solution - #1 Digital Solution for Business In Nigeria</title>
-    <meta name="description" content="Transform your business with LemmaIoT's comprehensive digital solutions. Web development, AI automation, business registration, cloud solutions & digital marketing services in Nigeria. Get your starter pack from ₦50,000.">
-    <meta name="keywords" content="digital solutions Nigeria, web development kwara, business registration CAC, AI automation services, cloud hosting Nigeria, digital marketing services, startup packages Nigeria, SME digital transformation">
-    <meta name="author" content="LemmaIoT">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://lemmaiot.com.ng">
+        <!-- Primary SEO Meta Tags -->
+        <title>
+            LemmaIoT Cloud Solution - #1 Digital Solution for Business In
+            Nigeria
+        </title>
+        <meta
+            name="description"
+            content="Transform your business with LemmaIoT's comprehensive digital solutions. Web development, AI automation, business registration, cloud solutions & digital marketing services in Nigeria. Get your starter pack from ₦50,000."
+        />
+        <meta
+            name="keywords"
+            content="digital solutions Nigeria, web development kwara, business registration CAC, AI automation services, cloud hosting Nigeria, digital marketing services, startup packages Nigeria, SME digital transformation"
+        />
+        <meta name="author" content="LemmaIoT" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://lemmaiot.com.ng" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lemmaiot.com.ng">
-    <meta property="og:title" content="#1 Digital Solution for Business In Nigeria">
-    <meta property="og:description" content="Transform your business with our digital solutions. Web development, AI automation, business registration & cloud services.">
-    <meta property="og:image" content="https://lemmaiot.com.ng/images/index-meta.jpg">
-    <meta property="og:site_name" content="LemmaIoT">
-    <meta property="og:locale" content="en_NG">
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://lemmaiot.com.ng" />
+        <meta
+            property="og:title"
+            content="#1 Digital Solution for Business In Nigeria"
+        />
+        <meta
+            property="og:description"
+            content="Transform your business with our digital solutions. Web development, AI automation, business registration & cloud services."
+        />
+        <meta
+            property="og:image"
+            content="https://lemmaiot.com.ng/images/index-meta.jpg"
+        />
+        <meta property="og:site_name" content="LemmaIoT" />
+        <meta property="og:locale" content="en_NG" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://lemmaiot.com.ng">
-    <meta property="twitter:title" content="#1 Digital Solution for Business In Nigeria">
-    <meta property="twitter:description" content="Transform your business with our digital solutions. Web development, AI automation, business registration & cloud services.">
-    <meta property="twitter:image" content="https://lemmaiot.com.ng/images/index-meta.jpg">
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://lemmaiot.com.ng" />
+        <meta
+            property="twitter:title"
+            content="#1 Digital Solution for Business In Nigeria"
+        />
+        <meta
+            property="twitter:description"
+            content="Transform your business with our digital solutions. Web development, AI automation, business registration & cloud services."
+        />
+        <meta
+            property="twitter:image"
+            content="https:/assets/images/index-meta.jpg"
+        />
 
-    <!-- PWA (Progressive Web App) -->
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="theme-color" content="#0808F5">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://lemmaiot.com.ng/assets/images/fav.png">
-    <link rel="apple-touch-icon" href="https://lemmaiot.com.ng/assets/images/fav.png">
+        <!-- PWA (Progressive Web App) -->
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="theme-color" content="#0808F5" />
 
-    <!-- Additional SEO Meta Tags -->
-    <meta name="geo.region" content="NG">
-    <meta name="geo.placename" content="Nigeria">
-    <meta name="geo.position" content="9.0820;8.6753">
-    <meta name="ICBM" content="9.0820, 8.6753">
-    <meta name="language" content="English">
-    <meta name="distribution" content="global">
-    <meta name="rating" content="general">
-    <meta name="revisit-after" content="7 days">
-    
-    <!-- Preconnect for Performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Scripts -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
-            colors: {
-              'brand-blue': '#0808F5',
-              'brand-blue-dark': '#06066B',
-              'brand-pink': '#FF3366',
-              'brand-pink-light': '#FF6B9D',
-            },
-            keyframes: {
-              fadeInUp: {
-                'from': { opacity: 0, transform: 'translateY(20px)' },
-                'to': { opacity: 1, transform: 'translateY(0)' },
-              },
-              floating: {
-                '0%, 100%': { transform: 'translateY(0px)' },
-                '50%': { transform: 'translateY(-15px)' },
-              },
-              pulseGlow: {
-                '0%, 100%': { boxShadow: '0 0 20px rgba(255, 51, 102, 0.4)' },
-                '50%': { boxShadow: '0 0 35px rgba(255, 51, 102, 0.8)' },
-              },
-              constellation: {
-                '0%': { transform: 'translate(0, 0)', opacity: 0.3 },
-                '25%': { transform: 'translate(5px, 15px)', opacity: 1 },
-                '50%': { transform: 'translate(15px, -10px)', opacity: 0.5 },
-                '75%': { transform: 'translate(-5px, -10px)', opacity: 0.8 },
-                '100%': { transform: 'translate(0, 0)', opacity: 0.3 },
-              }
-            },
-            animation: {
-              fadeInUp: 'fadeInUp 0.8s ease-out forwards',
-              floating: 'floating 4s ease-in-out infinite',
-              pulseGlow: 'pulseGlow 2.5s ease-in-out infinite',
-              constellation: 'constellation 30s ease-in-out infinite',
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="/assets/images/fav.png" />
+        <link rel="apple-touch-icon" href="https:/assets/images/fav.png" />
+
+        <!-- Additional SEO Meta Tags -->
+        <meta name="geo.region" content="NG" />
+        <meta name="geo.placename" content="Nigeria" />
+        <meta name="geo.position" content="9.0820;8.6753" />
+        <meta name="ICBM" content="9.0820, 8.6753" />
+        <meta name="language" content="English" />
+        <meta name="distribution" content="global" />
+        <meta name="rating" content="general" />
+        <meta name="revisit-after" content="7 days" />
+
+        <!-- Preconnect for Performance -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Scripts -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ["Inter", "sans-serif"],
+                        },
+                        colors: {
+                            "brand-blue": "#0808F5",
+                            "brand-blue-dark": "#06066B",
+                            "brand-pink": "#FF3366",
+                            "brand-pink-light": "#FF6B9D",
+                        },
+                        keyframes: {
+                            fadeInUp: {
+                                from: {
+                                    opacity: 0,
+                                    transform: "translateY(20px)",
+                                },
+                                to: { opacity: 1, transform: "translateY(0)" },
+                            },
+                            floating: {
+                                "0%, 100%": { transform: "translateY(0px)" },
+                                "50%": { transform: "translateY(-15px)" },
+                            },
+                            pulseGlow: {
+                                "0%, 100%": {
+                                    boxShadow:
+                                        "0 0 20px rgba(255, 51, 102, 0.4)",
+                                },
+                                "50%": {
+                                    boxShadow:
+                                        "0 0 35px rgba(255, 51, 102, 0.8)",
+                                },
+                            },
+                            constellation: {
+                                "0%": {
+                                    transform: "translate(0, 0)",
+                                    opacity: 0.3,
+                                },
+                                "25%": {
+                                    transform: "translate(5px, 15px)",
+                                    opacity: 1,
+                                },
+                                "50%": {
+                                    transform: "translate(15px, -10px)",
+                                    opacity: 0.5,
+                                },
+                                "75%": {
+                                    transform: "translate(-5px, -10px)",
+                                    opacity: 0.8,
+                                },
+                                "100%": {
+                                    transform: "translate(0, 0)",
+                                    opacity: 0.3,
+                                },
+                            },
+                        },
+                        animation: {
+                            fadeInUp: "fadeInUp 0.8s ease-out forwards",
+                            floating: "floating 4s ease-in-out infinite",
+                            pulseGlow: "pulseGlow 2.5s ease-in-out infinite",
+                            constellation:
+                                "constellation 30s ease-in-out infinite",
+                        },
+                    },
+                },
+            };
+        </script>
+        <script type="importmap">
+            {
+                "imports": {
+                    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+                    "react": "https://aistudiocdn.com/react@^19.2.0",
+                    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0",
+                    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+                }
             }
-          }
-        }
-      }
-    </script>
-<script type="importmap">
-{
-  "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
-<body class="bg-gray-50 text-gray-800 antialiased">
-    <div id="root"></div>
-<script type="module" src="/index.tsx"></script>
-</body>
+        </script>
+        <link rel="stylesheet" href="/index.css" />
+    </head>
+    <body class="bg-gray-50 text-gray-800 antialiased">
+        <div id="root"></div>
+        <script type="module" src="/index.tsx"></script>
+    </body>
 </html>

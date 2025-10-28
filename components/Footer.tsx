@@ -111,7 +111,7 @@ const Footer: React.FC = () => {
           <div>
             <a href="/" className="flex items-center space-x-2 mb-4">
               <img
-                src="https://lemmaiot.com.ng/assets/images/logo-wh.png"
+                src="/assets/images/logo-wh.png"
                 alt="LemmaIoT Logo"
                 className="h-12 w-auto"
               />
