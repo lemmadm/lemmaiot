@@ -3,7 +3,13 @@
 # Build settings for a static front-end application.
 # The 'publish' directory should contain your index.html.
 [build]
-  publish = "/"
+  command = "npm run build"
+  publish = "dist"
+
+# Environment variables for local development
+# For production, set these via Netlify UI: Project configuration > Environment variables
+[context.dev.environment]
+  # VITE_API_KEY = "your-api-key-here"  # Uncomment and add your API key for local dev
 
 # Redirect and rewrite rules for Single Page Applications (SPAs).
 # This rule ensures that any direct navigation to a deep link
@@ -27,7 +33,7 @@
     X-Content-Type-Options = "nosniff"
     # A robust Content Security Policy (CSP) to mitigate XSS attacks.
     # It restricts sources for scripts, styles, and other assets.
-    Content-Security-Policy = "default-src 'self' https://aistudiocdn.com; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://bible-api.com;"
+    Content-Security-Policy = "default-src 'self' https://aistudiocdn.com; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://bible-api.com https://generativelanguage.googleapis.com;"
     # A modern permissions policy to control access to sensitive APIs.
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
 
