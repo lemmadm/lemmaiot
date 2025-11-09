@@ -4,25 +4,20 @@
     <priority>1.0</priority>
   </url>
 
-  <url> <loc>https://www.lemmaiot.com.ng/get_started.html</loc>
+  <url> <loc>https://www.lemmaiot.com.ng/tools</loc>
     <priority>0.8</priority>
   </url>
 
-  <url> <loc>https://www.lemmaiot.com.ng/services.html</loc>
-    <priority>0.7</priority>
-  </url>
-
-<url> <loc>https://www.lemmaiot.com.ng/contact.html</loc>
-    <priority>0.7</priority>
-  </url>
-
-<url> <loc>https://lemmaiot.glide.page</loc>
+  <url> <loc>https://www.lemmaiot.com.ng/services</loc>
     <priority>0.8</priority>
   </url>
 
-  <url> <loc>https://lemmaiot.carrd.co</loc>
+<url> <loc>https://www.lemmaiot.com.ng/contact</loc>
     <priority>0.7</priority>
   </url>
+
+<url> <loc>https://www.lemmaiot.com.ng/about</loc>
+    <priority>0.7</priority>
   </url>
 
   <!-- Add more URLs for other important pages -->

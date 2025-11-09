@@ -1,4 +1,5 @@
-import { GoogleGenAI } from "@google/genai";
+import { GoogleGenAI, Type } from "@google/genai";
+import type { BusinessNameSuggestion } from '../types';
 
 const API_KEY = process.env.API_KEY;
 
@@ -101,5 +102,60 @@ RULES:
   } catch (error) {
     console.error("Error in getAIAgentResponse:", error);
     throw error;
+  }
+};
+
+export const generateBusinessNames = async (description: string, keywords: string): Promise<BusinessNameSuggestion[]> => {
+  if (!API_KEY) {
+    throw new Error("Gemini API key is not configured.");
+  }
+
+  try {
+    const prompt = `
+      Based on the following business description and keywords, generate 10 creative, modern, and memorable business names suitable for the Nigerian market. For each name, also create a short, catchy tagline.
+
+      Business Description: "${description}"
+      Keywords: "${keywords}"
+
+      Provide unique and brandable names. Avoid generic terms.
+    `;
+    
+    const response = await ai.models.generateContent({
+      model: 'gemini-2.5-flash',
+      contents: prompt,
+      config: {
+        responseMimeType: "application/json",
+        responseSchema: {
+          type: Type.OBJECT,
+          properties: {
+            names: {
+              type: Type.ARRAY,
+              items: {
+                type: Type.OBJECT,
+                properties: {
+                  name: {
+                    type: Type.STRING,
+                    description: "The business name.",
+                  },
+                  tagline: {
+                    type: Type.STRING,
+                    description: "A short, catchy tagline for the business name.",
+                  },
+                },
+                required: ["name", "tagline"],
+              },
+            },
+          },
+          required: ["names"],
+        },
+      },
+    });
+
+    const jsonResponse = JSON.parse(response.text);
+    return jsonResponse.names || [];
+
+  } catch (error) {
+    console.error("Error calling Gemini API for business names:", error);
+    throw new Error("An error occurred while generating business names. Please try again later.");
   }
 };

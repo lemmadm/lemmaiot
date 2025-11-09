@@ -63,9 +63,7 @@ export const useAIAgent = () => {
 
     } catch (err) {
       console.error("Error in useAIAgent:", err);
-      const errorMessage: Message = { role: 'model', text: 'Sorry, I encountered an error. Please try again or close this window to explore the site manually.' };
-      setMessages(prev => [...prev, errorMessage]);
-      setError('Failed to get response from AI.');
+      setError('Sorry, I encountered an error. Please try again.');
     } finally {
       setIsLoading(false);
     }

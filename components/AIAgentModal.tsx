@@ -3,7 +3,7 @@ import { useAIAgent } from '../hooks/useAIAgent';
 import { CloseIcon, SendIcon } from './Icons';
 
 const AIAgentModal: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
-  const { messages, isLoading, sendMessage } = useAIAgent();
+  const { messages, isLoading, sendMessage, error } = useAIAgent();
   const chatContainerRef = useRef<HTMLDivElement>(null);
   const [isTyping, setIsTyping] = useState(false);
   const [inputValue, setInputValue] = useState('');
@@ -78,16 +78,23 @@ const AIAgentModal: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOp
           ))}
           {isLoading && (
             <div className="flex justify-start">
-               <div className="max-w-xs md:max-w-md rounded-2xl px-4 py-3 bg-gray-700/50 text-blue-100 rounded-bl-none flex items-center space-x-2">
+              <div className="max-w-xs md:max-w-md rounded-2xl px-4 py-3 bg-gray-700/50 text-blue-100 rounded-bl-none flex items-center">
+                <div className="flex items-center space-x-1.5">
                   <span className="w-2 h-2 bg-brand-pink rounded-full animate-pulse" style={{animationDelay: '0s'}}></span>
                   <span className="w-2 h-2 bg-brand-pink rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></span>
                   <span className="w-2 h-2 bg-brand-pink rounded-full animate-pulse" style={{animationDelay: '0.4s'}}></span>
-               </div>
+                </div>
+              </div>
             </div>
           )}
         </div>
         
         <div className="p-4 border-t border-white/10 flex-shrink-0">
+          {error && (
+            <div className="text-center mb-2">
+              <p className="text-red-300 text-sm">{error}</p>
+            </div>
+          )}
           {whatsAppLink ? (
              <a 
                 href={whatsAppLink} 

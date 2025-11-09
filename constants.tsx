@@ -1,7 +1,7 @@
 
 import React from 'react';
 import type { Service, PricingPlan, Testimonial } from './types';
-import { WebDevIcon, AiAutomationIcon, BusinessRegIcon, CloudIcon, DigitalMarketingIcon, BrandDesignIcon } from './components/Icons';
+import { WebDevIcon, AiAutomationIcon, BusinessRegIcon, CloudIcon, DigitalMarketingIcon, BrandDesignIcon, DocumentTextIcon, CalculatorIcon, ArchiveBoxIcon, PhotoIcon, VideoCameraIcon } from './components/Icons';
 
 export const SERVICES_DATA: Service[] = [
   {
@@ -100,4 +100,37 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
         role: "Founder, Chiddy's Cakes",
         avatar: "https://picsum.photos/100/100?random=3"
     }
+];
+
+export const LEMMA_TOOLS = [
+  {
+    icon: <DocumentTextIcon />,
+    name: "EasyBill Invoice Generator",
+    description: "Create professional invoices and receipts instantly. Free for Nigerian businesses, with support for VAT, logos, and WhatsApp sharing.",
+    link: "https://easybill.lemmaiot.com.ng/",
+  },
+  {
+    icon: <CalculatorIcon />,
+    name: "Q-Spark Quote Generator",
+    description: "Instantly create business quotations and calculate pricing. The perfect tool for photographers, caterers, consultants, and more.",
+    link: "https://quotes.lemmaiot.com.ng/",
+  },
+  {
+    icon: <ArchiveBoxIcon />,
+    name: "StockPilot Inventory",
+    description: "The leading inventory management software for Nigerian SMEs. Manage stock, sales, and generate reports from one dashboard.",
+    link: "https://stockpilot.ng/",
+  },
+  {
+    icon: <PhotoIcon />,
+    name: "Image Spark AI Generator",
+    description: "Unleash creativity with our AI Image Generator. Create stunning, high-quality visuals from simple text prompts for your marketing.",
+    link: "https://image.lemmaiot.com.ng/",
+  },
+  {
+    icon: <VideoCameraIcon />,
+    name: "Veo Spark AI Video",
+    description: "Bring your ideas to life with AI-powered video. Generate engaging, short-form videos from text, perfect for ads and social content.",
+    link: "https://veo.lemmaiot.com.ng/",
+  },
 ];

@@ -73,14 +73,14 @@ const Hero: React.FC = () => {
               className="text-lg md:text-xl text-blue-100 mb-8 max-w-lg animate-fadeInUp"
               style={{ animationDelay: '0.4s', opacity: 0 }}
             >
-              We provide Nigerian SMEs with the digital tools to thrive. From websites to AI automation, we are your dedicated partner for growth.
+              Whether you need a new website, want to refine your existing one, or add powerful AI features, we provide the digital tools to help your Nigerian business thrive.
             </p>
             <div 
               className="flex flex-col sm:flex-row gap-4 animate-fadeInUp"
               style={{ animationDelay: '0.6s', opacity: 0 }}
             >
               <div className="relative group">
-                <a href="#services" className="bg-brand-pink text-white px-8 py-4 rounded-full hover:bg-brand-pink-light transition-all duration-300 font-bold text-center shadow-lg hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105 hover:animate-pulseGlow block">
+                <a href="/services" className="bg-brand-pink text-white px-8 py-4 rounded-full hover:bg-brand-pink-light transition-all duration-300 font-bold text-center shadow-lg hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105 hover:animate-pulseGlow block">
                   Explore Services
                 </a>
                 <div role="tooltip" className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-1.5 bg-brand-blue-dark text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none whitespace-nowrap transform translate-y-2 group-hover:translate-y-0">
@@ -89,11 +89,11 @@ const Hero: React.FC = () => {
                 </div>
               </div>
               <div className="relative group">
-                <a href="#solution" className="bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-full hover:bg-white/30 transition-all duration-300 font-bold text-center border border-white/30 block transform hover:-translate-y-1 hover:scale-105">
+                <a href="/contact" className="bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-full hover:bg-white/30 transition-all duration-300 font-bold text-center border border-white/30 block transform hover:-translate-y-1 hover:scale-105">
                   Our Process
                 </a>
                 <div role="tooltip" className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-1.5 bg-brand-blue-dark text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none whitespace-nowrap transform translate-y-2 group-hover:translate-y-0">
-                  Learn about our 3-step collaborative approach
+                  Learn how we collaborate to bring your vision to life
                   <div className="absolute left-1/2 -translate-x-1/2 top-full w-0 h-0 border-x-4 border-x-transparent border-t-4 border-t-brand-blue-dark"></div>
                 </div>
               </div>

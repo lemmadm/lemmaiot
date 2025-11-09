@@ -44,7 +44,7 @@ const Services: React.FC = () => {
             <div 
               key={service.title} 
               className="bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group"
-              style={{ animation: `fadeInUp 0.5s ease-out ${index * 0.1}s forwards`, opacity: 0 }}
+              style={{ animation: `fadeInUp 0.5s ease-out ${index * 0.1}s both` }}
             >
               <div className="w-16 h-16 bg-gradient-to-br from-brand-blue to-brand-pink text-white rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
                 {service.icon}

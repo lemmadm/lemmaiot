@@ -22,3 +22,8 @@ export interface Testimonial {
   role: string;
   avatar: string;
 }
+
+export interface BusinessNameSuggestion {
+  name: string;
+  tagline: string;
+}
