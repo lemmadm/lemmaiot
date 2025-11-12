@@ -6,10 +6,9 @@
   command = "npm run build"
   publish = "dist"
 
-# Environment variables for local development
-# For production, set these via Netlify UI: Project configuration > Environment variables
-[context.dev.environment]
-  # VITE_API_KEY = "your-api-key-here"  # Uncomment and add your API key for local dev
+# Netlify Functions configuration
+[functions]
+  directory = "netlify/functions"
 
 # Redirect and rewrite rules for Single Page Applications (SPAs).
 # This rule ensures that any direct navigation to a deep link
